@@ -1,27 +1,28 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Times New Roman', Times, serif;
 }
+
 .background {
-    background-color:darkgray;
-    height: 100px;
+    background-color: #13121b;
+    height: 2000px;
     padding-top: 1px;
 }
 
 .title {
-    color:darkred;
+    color: rgb(255, 0, 0);
     text-align: center;
-    font-size: 40px;
-    margin-top: 12px;
+    font-size: 70px;
+    margin-top: 5%;
 }
 
 .display {
-    color: darkred;
-    font-size: 25px;
+    color: rgb(255, 0, 0);
+    font-size: 45px;
     text-align: center;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .hide {
@@ -29,17 +30,19 @@
 }
 
 .container {
-    margin: 0 auto;
+    margin: 30 auto;
     display: grid;
     grid-template-columns: 35% 35% 35%;
     grid-template-rows: 35% 35% 35%;
-    max-width: 300px
+    max-width: 300px;
+    height: 300px;
+
 }
 
-.title {
-    border: 1px solid darkred;
-    min-width: 100px;
-    min-height: 100px;
+.tile {
+    border: 1px solid rgb(255, 0, 0);
+    min-width: 50px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +51,11 @@
 }
 
 .playerX {
-    color:darkred; 
+    color: #ff0000;
 }
 
 .playerO {
-    color:rgb(73, 0, 73);
+    color: #4100bb;
 }
 
 .controls {
@@ -63,13 +66,20 @@
     margin-top: 1px;
 }
 
-#reset {
-    background-color:black;
-    color: darkred;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    margin-left: 1px;
+.controls button {
+    color: rgb(15, 9, 9);
+    padding: 15px;
+    border-radius: 40px;
+    border:#131111;
+    font-size: 15px;
+    margin-left: 8px;
     cursor: pointer;
+}
+
+.restart {
+    background-color: #131111;
+}
+
+#reset {
+    background-color: #ff0000;
 }
